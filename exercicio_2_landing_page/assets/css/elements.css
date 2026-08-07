@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +24,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 8rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -40,4 +44,12 @@ h5 {
 
 h6 {
     font-size: 3.5rem;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+img {
+    margin-bottom: 3rem;
 }
