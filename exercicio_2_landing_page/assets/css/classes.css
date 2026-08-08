@@ -11,7 +11,7 @@
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -21,5 +21,9 @@
 }
 
 .menu-spacing {
-    height: 65px;
+    height: 6.5rem;
+}
+
+#paragrafo-trabalhos {
+    margin-bottom: 4rem;
 }
