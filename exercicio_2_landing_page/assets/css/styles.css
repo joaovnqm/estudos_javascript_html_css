@@ -128,6 +128,22 @@
     transform: rotate(5deg);
 }
 
+.galeria-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.galeria-content h2 {
+    margin-bottom: 1rem;
+}
+
+.img-content h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
 /*
 .montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
