@@ -74,6 +74,7 @@
 .intro-img img {
     max-width: 100%;
     height: auto;
+    margin-top: 6rem;
 }
 
 .joao-img img {
@@ -133,6 +134,7 @@
     flex-flow: column wrap;
     justify-content: center;
     text-align: center;
+    padding-bottom: 7rem;
 }
 
 .galeria-content h2 {
@@ -144,6 +146,182 @@
     font-size: 3rem;
 }
 
-.contato-form {
-    
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap)
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 0.2rem solid var(--primary-color);
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.form-group ::placeholder {
+    color: var(--gray-color);
+}
+
+.img-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 3rem;
+}
+
+#footer {
+    padding: 2rem;
+}
+
+#footer p{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --menu-height: 9rem;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+        padding-block: 1rem;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .intro-content,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content {
+        top: 0;
+        min-height: auto;
+        padding-block: 6rem;
+    }
+
+    #intro .intro-text-content {
+        order: 1;
+        text-align: center;
+    }
+
+    #intro .intro-img {
+        order: 2;
+    }
+
+    .intro-img img {
+        margin-top: 0;
+    }
+
+    .img-content {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .contact-form {
+        grid-column: auto;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1.8rem;
+    }
+
+    .form-group button {
+        width: 100%;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --menu-height: 13rem;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 3.2rem;
+    }
+
+    .joao-img img {
+        width: 100%;
+    }
+
+    .grid h3 {
+        padding-left: 3rem;
+    }
+
+    .grid h3::before {
+        font-size: 6rem;
+        left: -1rem;
+    }
+
+    #footer p {
+        font-size: 1.5rem;
+    }
 }

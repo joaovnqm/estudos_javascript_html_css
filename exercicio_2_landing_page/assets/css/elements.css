@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--menu-height);
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     color: var(--primary-color)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, input, textarea {
     font-family: "Montserrat", sans-serif;
 }
 
